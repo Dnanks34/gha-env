@@ -9,7 +9,7 @@ env:
 jobs:
   test:
     env: 
-      MONGODB_CLUSTER_ADDRESS: cluster0.9itvdk6.mongodb.net/?
+      MONGODB_CLUSTER_ADDRESS: cluster0.9itvdk6.mongodb.net
       MONGODB_USERNAME: Dnanks34
       MONGODB_PASSWORD: YvaRDzU1pAGbGGEk   
       PORT: 8080
