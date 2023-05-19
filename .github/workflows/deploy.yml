@@ -7,6 +7,7 @@ on:
 env:
   MONGODB_DB_NAME: gha-demo
 jobs:
+  shell: powershell
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: mongodb+srv://Dnanks34:<password>@cluster0.9itvdk6.mongodb.net/?retryWrites=true&w=majority
