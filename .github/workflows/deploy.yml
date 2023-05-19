@@ -9,7 +9,7 @@ env:
 jobs:
   test:
     env: 
-      MONGODB_CLUSTER_ADDRESS: mongodb+srv://Dnanks34:<password>@cluster0.9itvdk6.mongodb.net/?retryWrites=true&w=majority
+      MONGODB_CLUSTER_ADDRESS: mongodb+srv://Dnanks34:<password>@cluster0.9itvdk6.mongodb.net/
       MONGODB_USERNAME: Dnanks34
       MONGODB_PASSWORD: YvaRDzU1pAGbGGEk   
       PORT: 8080
@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run server
-        run: npm start & npx wait-on http://216.164.26.173:8080
+        run: npm start & npx wait-on http://127.0.0.1:$PORT
       - name: Run tests
         run: npm test
       - name: Output information
